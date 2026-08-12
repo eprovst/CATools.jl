@@ -68,7 +68,7 @@ for (modifying, target) in
             # setup observables to be used by update
             img = Observable(
                 # tiny render to catch errors and setup type
-                DC.renderimage(f, shader, limits, (2, 2))
+                DC.renderimage(f, shader, limits, (2, 2), aa=false)
             )
             xl = Observable([limits[1], limits[2]])
             yl = Observable([limits[3], limits[4]])
@@ -105,9 +105,9 @@ for (modifying, target) in
 
                 # render new image reusing buffer if possible
                 if size(img.val) != px
-                    img.val = DC.renderimage(f, shader, axs, px)
+                    img.val = DC.renderimage(f, shader, axs, px, aa=false)
                 else
-                    DC.renderimage!(img.val, f, shader, axs)
+                    DC.renderimage!(img.val, f, shader, axs, aa=false)
                 end
                 notify(img)
             end
