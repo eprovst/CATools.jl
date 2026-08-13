@@ -1,7 +1,7 @@
 name = "ComplexToys"
 uuid = "7b41c207-ea06-4250-aacd-19be2e667afc"
-authors = ["Evert Provoost <evert@eprovst.net>"]
 version = "0.3.1"
+authors = ["Evert Provoost <evert@eprovst.net>"]
 
 [deps]
 DomainColoring = "c24f3079-adb7-4533-8329-9f66732e5e85"
@@ -12,7 +12,7 @@ Observables = "510215fc-4207-5dde-b226-833fc4488ee2"
 Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
 
 [compat]
-DomainColoring = "^2.1"
+DomainColoring = "^2.1, 2"
 GLMakie = "0.13"
 GeometryBasics = "0.5"
 LaTeXStrings = "1"
